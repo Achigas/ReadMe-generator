@@ -1,13 +1,24 @@
-const generatelist = commalist => {
+const generateList = commalist => {
   listarray = commalist.split(",")
   listarray = listarray.map(listitem => "* " + listitem)
   return listarray.join("  \n")
 }
 
 const generatebadges = BadgeArr => {
-  BadgeArr = BadgeArr.map(itemBadge => "![License](https://img.shields.io/static/v1?label=License&message=" + itemBadge + "&color=BLUE)")
-  return BadgeArr.join(" ")
+    BadgeArr = BadgeArr.map(itemBadge => {
+      if (itemBadge !== "None") {
+        return "![License](https://img.shields.io/static/v1?label=License&message=" + itemBadge + "&color=BLUE)"
+      }
+    })
+    return BadgeArr.join(" ")
 }
+  
+
+const generateObjectList = objectLicense => {
+  objectLicense = objectLicense.map(itemLicense => "* " + itemLicense)
+  return objectLicense.join("  \n")
+}
+
 
 // function to generate markdown for README
 function generateMarkdown(data) {
@@ -40,16 +51,18 @@ ${installation}
 ${usage}
 
 ## Licenses
-${licenses}
+${generateObjectList(licenses)}
 
 ## Contributing
-${generatelist(contributors)}
+${generateList(contributors)}
 
 ## Tests
 ${tests}
 
 ## Questions
-Github: [${username}](https://www.github.com/${username})
+Contact information for questions:  \n
+
+Github: [${username}](https://www.github.com/${username})  \n
 Email: ${email}
 `;
 }

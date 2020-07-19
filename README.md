@@ -1,12 +1,12 @@
 
 
-![License](https://img.shields.io/static/v1?label=License&message=MIT&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=Apache&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=GNU&color=BLUE)
+![License](https://img.shields.io/static/v1?label=License&message=MIT&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=Apache&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=ISC&color=BLUE) ![License](https://img.shields.io/static/v1?label=License&message=OBSD&color=BLUE)
 
-# ReadMe Generator
+# README Generator
 
 
 ## Description
-This code creates a professional ReadMe after a user provides project information. 
+This project will generate a profesional README.md document for a user. 
 
 ## Table of Contents
 
@@ -19,22 +19,27 @@ This code creates a professional ReadMe after a user provides project informatio
 
 
 ## Installation
-1) Install the NPM modules (Inquirer and FS) 2) Run Node Index 3) Answer Question prompts. 3) ReadMe will write to the 'dist' folder.
+Install npm (Inquirer and fs)
 
 ## Usage
-Answer questions
+Answer questions that are provided. When entering the contributors, use a comma-delimited list for correct formatting.
 
 ## Licenses
-MIT,Apache,GNU
+* MIT  
+* Apache  
+* ISC  
+* OBSD
 
 ## Contributing
-* Alex Chigas  
-*  Channing Tatum  
-*  Matt Bomer
+* Alex Chigas
 
 ## Tests
-Run a ton of tests to make sure your Read me is perfect!
+Run 'node index.js' to start the program. User will be prompted with questions.
 
 ## Questions
-Github: [Achigas](https://www.github.com/Achigas)
+Contact information for questions:  
+
+
+Github: [Achigas](https://www.github.com/Achigas)  
+
 Email: Achigas34@gmail.com
