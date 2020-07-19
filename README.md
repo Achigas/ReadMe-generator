@@ -1,7 +1,9 @@
 
 
+https://img.shields.io/static/v1?label=<License>&message=<MIT>&color=<BLUE> https://img.shields.io/static/v1?label=<License>&message=<Apache>&color=<BLUE> https://img.shields.io/static/v1?label=<License>&message=<GNU>&color=<BLUE>
+
 # ReadMe Generator
-https://img.shields.io/github/license/achigas/readme-generator
+
 
 ## Description
 This code creates a professional ReadMe after a user provides project information. 
@@ -26,7 +28,7 @@ Answer questions
 MIT,Apache,GNU
 
 ## Contributing
-*  Alex Chigas *   Channing Tatum *   Matt Bomer
+* Alex Chigas  *  Channing Tatum  *  Matt Bomer
 
 ## Tests
 Run a ton of tests to make sure your Read me is perfect!
