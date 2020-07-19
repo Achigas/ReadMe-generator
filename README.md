@@ -12,8 +12,9 @@ This project will generate a profesional README.md document for a user.
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#license)
 * [Screenshot](#screenshot)
+* [Features](#features)
+* [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -27,6 +28,14 @@ Answer questions that are provided. When entering the contributors, use a comma-
 
 ## Screenshot
 ![Example ReadMe](./images/ExampleReadMe.png)
+
+## Features
+* JavaScript
+* ShieldsIO (for badges)
+* NPM
+* Node.js
+* Inquirer
+* fs
 
 ## Licenses
 * MIT  
