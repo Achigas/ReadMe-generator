@@ -26,7 +26,7 @@ Install npm (Inquirer and fs)
 Answer questions that are provided. When entering the contributors, use a comma-delimited list for correct formatting.
 
 ## Screenshot
-![Example ReadMe]()
+![Example ReadMe](./images/ExampleReadMe.png)
 
 ## Licenses
 * MIT  
