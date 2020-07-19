@@ -1,6 +1,6 @@
 
 
-https://img.shields.io/static/v1?label=<License>&message=<MIT>&color=<BLUE> https://img.shields.io/static/v1?label=<License>&message=<Apache>&color=<BLUE> https://img.shields.io/static/v1?label=<License>&message=<GNU>&color=<BLUE>
+![License](https://img.shields.io/static/v1?label=<License>&message=<MIT>&color=<BLUE>) ![License](https://img.shields.io/static/v1?label=<License>&message=<Apache>&color=<BLUE>) ![License](https://img.shields.io/static/v1?label=<License>&message=<GNU>&color=<BLUE>)
 
 # ReadMe Generator
 

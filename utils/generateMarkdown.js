@@ -5,7 +5,7 @@ const generatelist = commalist => {
 }
 
 const generatebadges = BadgeArr => {
-  BadgeArr = BadgeArr.map(itemBadge => "https://img.shields.io/static/v1?label=<License>&message=<" + itemBadge + ">&color=<BLUE>")
+  BadgeArr = BadgeArr.map(itemBadge => "![License](https://img.shields.io/static/v1?label=<License>&message=<" + itemBadge + ">&color=<BLUE>)")
   return BadgeArr.join(" ")
 }
 
