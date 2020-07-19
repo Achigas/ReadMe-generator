@@ -13,6 +13,7 @@ This project will generate a profesional README.md document for a user.
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
+* [Screenshot](#screenshot)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -23,6 +24,9 @@ Install npm (Inquirer and fs)
 
 ## Usage
 Answer questions that are provided. When entering the contributors, use a comma-delimited list for correct formatting.
+
+## Screenshot
+![Example ReadMe]()
 
 ## Licenses
 * MIT  

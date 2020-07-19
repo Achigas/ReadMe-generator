@@ -22,7 +22,6 @@ const generateObjectList = objectLicense => {
 
 // function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(data)
   const {title, description, installation, usage, licenses, contributors, tests, username, email} = data
   return `
 
