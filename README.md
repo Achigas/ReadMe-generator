@@ -28,7 +28,7 @@ Answer questions
 MIT,Apache,GNU
 
 ## Contributing
-* Alex Chigas  *  Channing Tatum  *  Matt Bomer
+* Alex Chigas  \*  Channing Tatum  *  Matt Bomer 
 
 ## Tests
 Run a ton of tests to make sure your Read me is perfect!
