@@ -1,7 +1,7 @@
 const generatelist = commalist => {
   listarray = commalist.split(",")
-  listarray = listarray.map(listitem => "* " + listitem + "\ ")
-  return listarray.join(" ")
+  listarray = listarray.map(listitem => "* " + listitem)
+  return listarray.join("  \n")
 }
 
 const generatebadges = BadgeArr => {
