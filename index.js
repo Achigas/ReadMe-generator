@@ -2,9 +2,23 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
+mockdata = {
+    title: 'ReadMe Generator',
+    description: 'This code creates a professional ReadMe after a user provides project information. ',
+    installation: "1) Install the NPM modules (Inquirer and FS) 2) Run Node Index 3) Answer Question prompts. 3) ReadMe will write to the 'dist' folder.",
+    usage: 'Answer questions',
+    licenses: [ 'MIT', 'Apache', 'GNU' ],
+    contributors: 'Alex Chigas, Channing Tatum, Matt Bomer',
+    tests: 'Run a ton of tests to make sure your Read me is perfect!',
+    username: 'Achigas',
+    email: 'Achigas34@gmail.com'
+  }
+
 // array of questions for user
 const questions = () => {
+    data = []
     return inquirer.prompt([
+    
         {
             type: 'input',
             name: 'title',
@@ -37,12 +51,12 @@ const questions = () => {
             type: 'checkbox',
             name: 'licenses',
             message: 'Which licenses? Choose all that apply.',
-            choices: ['MIT', 'Apache','GNU','ISC' ]
+            choices: ['MIT', 'Apache','GNU','ISC', 'None' ]
         },
         {
             type: 'input',
             name: 'contributors',
-            message: 'Who were the contributing developers?'
+            message: 'Who were the contributing developers including yourself?'
         },
         {
             type: 'input',
@@ -72,13 +86,37 @@ const questions = () => {
 };
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+const writeToFile = (pageMD) => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./README.md', pageMD, err => {
+            if (err) {
+                reject(err);
+                return;
+              }
+
+              resolve({
+                  ok: true,
+                  message: 'ReadMe Created'
+                });
+            });
+        });
+    };
 
 // function to initialize program
-function init() {
+//function init() {
+//}
 
-}
+const pageMD = generateMarkdown(mockdata)
+writeToFile(pageMD)
 
 // function call to initialize program
-init();
+//questions()
+//.then(data => {
+  //  return generateMarkdown(data);
+//})
+//.then(pageMD => {
+   // return writeToFile(pageMD)
+//})
+//.catch(err => {
+//    console.log(err);
+//});
